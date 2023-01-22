@@ -29,7 +29,7 @@ header {
     position: sticky;
 }
 
-ul {
+.header-ul {
     align-items: center;
     justify-content: center;
     gap: 30px;
@@ -37,7 +37,11 @@ ul {
     width: 100%;
 }
 
-.ul-row {
+.header-a {
+    color: white;
+}
+
+.row {
     flex-direction: row;
 }
 
@@ -48,11 +52,7 @@ li {
     justify-content: center;
 }
 
-.header-li a { 
-    color: white; 
-}
-
-img {
+.header-img {
     height: 70%;
     width: auto;
     background-color: rgba(255, 255, 255, 0.1);
@@ -63,46 +63,38 @@ img {
     width: 100%;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-evenly;
     height: 200px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);}
+
+.col {
+    flex-direction: column; 
 }
 
-.hero-box-1m2 {
-    width: 50%;
+.hero-img {
+    height: 200px;
+    width: 200px;
 }
 
-.hero-box-1m2 div {
-    width: max-content;
-    padding: 10%;
-    border: black 0px solid;
-}
-
-.hero-box-1m2 div img {
-    width: 100%;
-    height: auto;
-}
-
-.hero-box-1m2 div ul {
-    flex-direction: column;
-    gap: 0px;
-}
-
-.box-of-hero-buttons {
-    width: 100%;
-    flex-direction: row;
+.hero-ul {
+    gap: 10px;
 }
 
 /* para tablets */
-@media (max-width: 820px) {
+@media (max-width: 600px) {
 
-}
-/* movile */
-@media (max-width: 480px) {
+    * { align-items: unset; }
+
     header { 
         position: flex; 
         height: auto;
+        width: 30%;
     }
 
-    ul { 
+    .hero { width: 70%; }
+
+    .header-ul { 
         flex-direction: column; 
         align-items: initial; 
         gap: 10px;
@@ -123,9 +115,14 @@ img {
         border: 0px;
     }
 
-    a, p, h2 { color: black }
+    .header-a { color: black }
 
-    .hero-box-1m2 { width: 100%; }
+    .hero { height: auto; }
+}
+/* movile */
+@media (max-width: 480px) {
+
+
 }
 
 /* equipos grandes */
