@@ -82,6 +82,10 @@ header {
     width: 100%;
 }
 
+.half-width {
+    width: 50%;
+}
+
 .hero-img {
     height: 200px;
     width: 200px;
@@ -94,7 +98,6 @@ header {
 .center {
     align-items: center;
     justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
@@ -136,6 +139,35 @@ header {
 
 #hold-cats {
     background-color: var(--grey-light);
+}
+
+/* demo para boxes */
+#box-01 {
+    align-items: end;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;	
+    background-image: url('https://images.ecestaticos.com/WQdxthvn11oGVR4dzkf-KWZWn3s=/0x0:2120x1414/557x418/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F47b%2F328%2F963%2F47b3289639713b8e80c8d682d219fba7.jpg');
+}
+
+#box-01 ul {
+    align-items: self-start; 
+    gap: 5px;
+}
+
+.name { background-color: purple;}
+.age { background-color: blue; }
+.location { background-color: yellow; }
+.posting { background-color: saddlebrown; }
+
+.name, .age, .location, .posting {
+    border-radius: 20%;
+    border-radius: 1px black 0.5;
+    color: white;
+    text-transform: capitalize;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 9px;
 }
 
 /* para tablets */
