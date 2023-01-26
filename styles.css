@@ -8,6 +8,18 @@
     --grey-light: rgb(245, 245, 245);
 }
 
+#box-01 {
+    background-image: url('https://images.ecestaticos.com/WQdxthvn11oGVR4dzkf-KWZWn3s=/0x0:2120x1414/557x418/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F47b%2F328%2F963%2F47b3289639713b8e80c8d682d219fba7.jpg');
+}
+
+#box-02 {
+    background-image: url('https://s1.eestatic.com/2020/05/18/como/gatos-mascotas-trucos_490961518_152142876_1024x576.jpg');
+}
+
+#box-03 {
+    background-image: url('https://www.bunko.pet/__export/1635361879357/sites/debate/img/2021/10/27/dia_gato_negro_crop1635361836062.jpeg_172596871.jpeg');
+}
+
 h1 {
     text-transform: uppercase;
     text-decoration: none;
@@ -91,7 +103,7 @@ header {
     width: 200px;
 }
 
-.hero-ul {
+.air {
     gap: 10px;
 }
 
@@ -99,6 +111,12 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.start-position {
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: baseline;
 }
 
 .about {
@@ -142,15 +160,15 @@ header {
 }
 
 /* demo para boxes */
-#box-01 {
+
+.box-content {
     align-items: end;
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;	
-    background-image: url('https://images.ecestaticos.com/WQdxthvn11oGVR4dzkf-KWZWn3s=/0x0:2120x1414/557x418/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F47b%2F328%2F963%2F47b3289639713b8e80c8d682d219fba7.jpg');
 }
 
-#box-01 ul {
+.box-content ul {
     align-items: self-start; 
     gap: 5px;
 }
@@ -170,6 +188,13 @@ header {
     font-size: 9px;
 }
 
+/*****************************/
+
+/*Login Page */
+
+form {
+    height: 400px;
+}
 /* para tablets */
 @media (max-width: 600px) {
 
